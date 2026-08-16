@@ -58,15 +58,15 @@ const Sidebar = () => {
 
       <div
         className={clsx(
-          "relative h-screen overflow-y-auto",
-          "flex flex-col shrink-0 z-50",
+          isMobile ? "fixed top-0 left-0 bottom-0" : "relative h-screen",
+          "overflow-y-auto flex flex-col shrink-0 z-50",
           "scrollbar-hide",
           "transition-all duration-300 ease-in-out",
           "bg-sidebar-border text-sidebar-text",
           "dark:bg-sidebar-bg-dark dark:text-sidebar-text-dark",
           "border-r border-sidebar-border dark:border-sidebar-border-dark",
           "shadow-lg",
-          open ? "w-64 p-5 pt-6" : "w-20 p-3 pt-6",
+          open ? "w-64 p-5 pt-6" : isMobile ? "w-0 p-0 overflow-hidden" : "w-20 p-3 pt-6",
         )}
       >
         {/* Header */}
