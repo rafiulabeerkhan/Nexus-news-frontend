@@ -6,7 +6,7 @@ const ACCESS_TOKEN_KEY = import.meta.env.VITE_ACCESS_TOKEN_KEY;
 const IS_DEMO_MODE = true; // Set to true to prevent data modification on the live portfolio
 
 const api = axios.create({
-  baseURL: "/path",
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
 
@@ -56,7 +56,7 @@ api.interceptors.response.use(
     try {
       if (!refreshPromise) {
         refreshPromise = axios
-          .post("/path/api/auth/refresh", {}, { withCredentials: true })
+          .post(`${import.meta.env.VITE_API_URL}/api/auth/refresh`, {}, { withCredentials: true })
           .then((res) => {
             const newAccessToken = res.data[ACCESS_TOKEN_KEY];
 
