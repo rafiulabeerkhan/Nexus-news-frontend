@@ -77,7 +77,7 @@ To add real data, temporarily switch this flag to `false`.
 
 ## 👨‍💻 Developed By
 
-**Rafiul Abeer Khan**  
+**Rafiul Islam Khan**  
 Full-Stack Developer  
 
 🔗 **Portfolio:** [rafiulabeerkhan.vercel.app](https://rafiulabeerkhan.vercel.app/)  
