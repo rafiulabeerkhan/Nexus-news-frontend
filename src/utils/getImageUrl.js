@@ -4,7 +4,5 @@ export const getImageUrl = (path) => {
   // Clean path to ensure it starts with a slash
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
   
-  // Route through the Vite proxy in development
-  if (cleanPath.startsWith('/path')) return cleanPath;
-  return `/path${cleanPath}`;
+  return `${import.meta.env.VITE_API_URL}${cleanPath}`;
 };
