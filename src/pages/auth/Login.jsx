@@ -68,8 +68,15 @@ const Login = () => {
             </motion.div>
           </div>
           
-          <div className="relative z-10 text-primary-200 text-sm font-medium opacity-80 pt-10">
-            © {new Date().getFullYear()} NexusNews. All rights reserved.
+          <div className="relative z-10 text-primary-200 text-sm font-medium opacity-80 pt-10 flex flex-col gap-3">
+            <div>© {new Date().getFullYear()} NexusNews. All rights reserved.</div>
+            <div className="flex items-center gap-2">
+              Developed and maintained by
+              <a href="https://www.emeraldlabs.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white font-semibold hover:text-primary-200 hover:underline transition-colors">
+                <img src="/EmeraldLabs.png" alt="EmeraldLabs Logo" className="h-5 object-contain" />
+                EmeraldLabs
+              </a>
+            </div>
           </div>
         </div>
 

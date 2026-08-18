@@ -58,8 +58,12 @@ export default function Footer() {
             Read about our approach to external linking.
           </p>
           
-          <div className="text-sm text-gray-400 bg-black/20 px-4 py-2 rounded-lg border border-white/5">
-            Developed and maintained by <a href="https://rafiulabeerkhan.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary-400 font-semibold hover:text-primary-300 hover:underline transition-colors">rafiulabeerkhan</a>
+          <div className="text-sm text-gray-400 bg-black/20 px-4 py-2 rounded-lg border border-white/5 flex flex-wrap items-center gap-2">
+            Developed and maintained by
+            <a href="https://www.emeraldlabs.tech" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary-400 font-semibold hover:text-primary-300 hover:underline transition-colors">
+              <img src="/EmeraldLabs.png" alt="EmeraldLabs Logo" className="h-6 object-contain" />
+              EmeraldLabs
+            </a>
           </div>
         </div>
       </div>
